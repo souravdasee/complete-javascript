@@ -4,9 +4,19 @@ let population = 130;
 const isIsland = false;
 let language = "hindi";
 
-isIsland = true;
+population /= 2;
+population++;
 
-console.log(typeof isIsland);
-console.log(typeof population);
-console.log(typeof country);
-console.log(typeof language);
+const popFinland = 6;
+
+const popAvgCountry = 33;
+
+const description = country + " is in " + continent + ", and its " + population + " million people speak " + language;
+
+console.log(population);
+
+console.log(population > popFinland);
+
+console.log(population < popAvgCountry);
+
+console.log(description);
