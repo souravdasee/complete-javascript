@@ -1,3 +1,4 @@
+/*
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
@@ -18,7 +19,7 @@ console.log(typeof year);
 
 console.log(typeof null);
 
-/*
+
 let js = 'amazing';
 console.log(40 + 8 + 23 - 10);
 
