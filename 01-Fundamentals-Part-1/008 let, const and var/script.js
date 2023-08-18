@@ -1,3 +1,4 @@
+/*
 let age = 30;
 age = 31;
 
@@ -13,7 +14,7 @@ lastName = "Das";
 lastName = 'pond';
 console.log(lastName);
 
-/*
+
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
