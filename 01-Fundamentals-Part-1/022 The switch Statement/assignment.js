@@ -1,10 +1,33 @@
-const country = 'Portugal';
-const continent = "Europe";
-let population = 30;
-const isIsland = false;
-let language = "english";
-const popFinland = 6;
-const popAvgCountry = 33;
+const language = 'hindi';
+
+switch (language) {
+    case 'chinese':
+    case 'mandarin':
+        console.log('Most number of native speakers!');
+        break;
+    case 'spanish':
+        console.log('2nd place in number of native speakers');
+        break;
+    case 'english':
+        console.log('3rd place');
+        break;
+    case 'hindi':
+        console.log('Number 4');
+        break;
+    case 'arabic':
+        console.log('5th most spoken language');
+        break;
+    default:
+        console.log('Great language too :D');
+}
+
+// const country = 'Portugal';
+// const continent = "Europe";
+// let population = 30;
+// const isIsland = false;
+// let language = "english";
+// const popFinland = 6;
+// const popAvgCountry = 33;
 // const numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
 
 // population /= 2;
@@ -24,11 +47,11 @@ const popAvgCountry = 33;
 //     console.log('No borders');
 // }
 
-if (language === 'english' && population < 50 && !isIsland) {
-    console.log(`You should live in ${country} :)`);
-} else {
-    console.log(`${country} does not meet your criteria :(`);
-}
+// if (language === 'english' && population < 50 && !isIsland) {
+//     console.log(`You should live in ${country} :)`);
+// } else {
+//     console.log(`${country} does not meet your criteria :(`);
+// }
 
 // const description = country + " is in " + continent + ", and its " + population + " million people speak " + language;
 // const description1 = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
