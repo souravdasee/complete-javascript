@@ -1,5 +1,7 @@
 'use strict';
 
+/*
+////////////////////////////////////////////////////////////////////
 // Function declaration
 const age1 = calcAge1(1997);
 function calcAge1(birthYear) {
@@ -14,7 +16,7 @@ const age2 = calcAge2(1997);
 
 console.log(age1, age2);
 
-/*
+
 //////////////////////////////////////////////////////////////////
 function logger() {
     console.log('My name is Sourav.');
