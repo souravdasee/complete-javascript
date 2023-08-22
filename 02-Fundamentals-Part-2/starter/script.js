@@ -1,5 +1,7 @@
 'use strict';
 
+/*
+//////////////////////////////////////////////////////////////////
 function logger() {
     console.log('My name is Sourav.');
 }
@@ -22,7 +24,7 @@ console.log(appleOrangeJuice);
 
 const num = Number('23');
 
-/*
+
 ///////////////////////////////////////////////////////////////
 let hasDriversLicense = false;
 const passTest = true;
