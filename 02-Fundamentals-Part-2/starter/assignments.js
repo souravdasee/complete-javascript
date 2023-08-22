@@ -1,5 +1,10 @@
 'use strict';
 
+const percentageOfWorld3 = population => (population / 7900) * 100;
+console.log(`China has 1441 million people, so it's about ${percentageOfWorld3(1441)}% of the world population`);
+console.log(`India has 1700 million people, so it's about ${percentageOfWorld3(1700)}% of the world population`);
+console.log(`USA has 332 million people, so it's about ${percentageOfWorld3(332)}% of the world population`);
+
 // function describeCountry(country, population, capitalCity) {
 //     const description = `${country} has ${population} million people and its capital city is ${capitalCity}`;
 //     return description;

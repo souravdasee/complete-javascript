@@ -1,5 +1,8 @@
 'use strict';
 
+
+/*
+/////////////////////////////////////////////////////////////////////
 // Arrow function
 const calcAge3 = birthYear => 2037 - birthYear;
 const age3 = calcAge3(1997);
@@ -15,7 +18,7 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 console.log(yearsUntilRetirement(1997, 'Sourav'));
 console.log(yearsUntilRetirement(1980, 'Bob'));
 
-/*
+
 ////////////////////////////////////////////////////////////////////
 // Function declaration
 const age1 = calcAge1(1997);
