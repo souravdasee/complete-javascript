@@ -1,5 +1,8 @@
 'use strict';
 
+
+/*
+////////////////////////////////////////////////////////////////////
 const calcAge = function (birthYear) {
     return 2037 - birthYear;
 }
@@ -20,7 +23,7 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 console.log(yearsUntilRetirement(1997, 'Sourav'));
 console.log(yearsUntilRetirement(1950, 'Bob'));
 
-/*
+
 ////////////////////////////////////////////////////////////////////
 function cutFruitPieces(fruit) {
     return fruit * 4;
