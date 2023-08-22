@@ -1,5 +1,19 @@
 'use strict';
 
+// Function declaration
+const age1 = calcAge1(1997);
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
+}
+
+// Function expression
+const calcAge2 = function(birthYear) {
+    return 2037 - birthYear;
+}
+const age2 = calcAge2(1997);
+
+console.log(age1, age2);
+
 /*
 //////////////////////////////////////////////////////////////////
 function logger() {
