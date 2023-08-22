@@ -1,14 +1,14 @@
 'use strict';
 
-function percentageOfWorld1(population) {
-    return (population / 7900) * 100;
-}
+// function percentageOfWorld1(population) {
+//     return (population / 7900) * 100;
+// }
 
-const describePopulation = (country, population) => `${country} has ${population} million people, which is about ${percentageOfWorld1(population)}% of the world.`
+// const describePopulation = (country, population) => `${country} has ${population} million people, which is about ${percentageOfWorld1(population)}% of the world.`
 
-console.log(describePopulation('China', 1441));
-console.log(describePopulation('Idnia', 1700));
-console.log(describePopulation('USA', 332));
+// console.log(describePopulation('China', 1441));
+// console.log(describePopulation('Idnia', 1700));
+// console.log(describePopulation('USA', 332));
 
 // const percentageOfWorld3 = population => (population / 7900) * 100;
 // console.log(`China has 1441 million people, so it's about ${percentageOfWorld3(1441)}% of the world population`);
