@@ -17,18 +17,23 @@
 // //     console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
 // // }
 
-const avgDolphins = (97 + 112 + 101) / 3;
-const avgKoalas = (109 + 95 + 123) / 3;
-const minScore = 100;
+// const avgDolphins = (97 + 112 + 101) / 3;
+// const avgKoalas = (109 + 95 + 123) / 3;
+// const minScore = 100;
 
-console.log(avgDolphins, avgKoalas);
+// console.log(avgDolphins, avgKoalas);
 
-if ((avgDolphins > avgKoalas) && (avgDolphins >= minScore)) {
-    console.log('Winner is Dolphins');
-} else if ((avgDolphins === avgKoalas) && (avgDolphins>= minScore) && (avgKoalas >= minScore)) {
-    console.log('Draw');
-} else if ((avgDolphins < avgKoalas) && (avgKoalas >= minScore)) {
-    console.log('Winner is Koalas');
-} else {
-    console.log('Winner have not minimun score');
-}
+// if ((avgDolphins > avgKoalas) && (avgDolphins >= minScore)) {
+//     console.log('Winner is Dolphins');
+// } else if ((avgDolphins === avgKoalas) && (avgDolphins>= minScore) && (avgKoalas >= minScore)) {
+//     console.log('Draw');
+// } else if ((avgDolphins < avgKoalas) && (avgKoalas >= minScore)) {
+//     console.log('Winner is Koalas');
+// } else {
+//     console.log('Winner have not minimun score');
+// }
+
+const bill = Number(prompt('What is the bill amount?'));
+const tip = bill >= 50 && bill<= 300 ? bill * 0.15 : bill * 0.2;
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
