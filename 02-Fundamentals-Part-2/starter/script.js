@@ -1,5 +1,8 @@
 'use strict';
 
+
+/*
+////////////////////////////////////////////////////////////////////
 function cutFruitPieces(fruit) {
     return fruit * 4;
 }
@@ -13,7 +16,7 @@ function fruitProcessor(apples, oranges) {
 }
 console.log(fruitProcessor(2, 3));
 
-/*
+
 /////////////////////////////////////////////////////////////////////
 // Arrow function
 const calcAge3 = birthYear => 2037 - birthYear;
