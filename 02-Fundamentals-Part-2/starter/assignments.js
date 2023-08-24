@@ -8,6 +8,16 @@ const myCountry = {
     neighbours: ['Bangladesh', 'Nepal', 'China', 'Bhutan', 'Mayanmar', 'Sri Lanka', 'Pakistan', 'Afganistan']
 }
 
+'Finland has 6 million finnish-speaking people, 3 neighbouring countriesand a capital called Helsinki.'
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countriesand a capital called ${myCountry.capital}.`);
+
+myCountry.population += 2;
+console.log(myCountry.population);
+
+myCountry['population'] -= 2;
+console.log(myCountry.population);
+
 
 // const neighbours = ['Bangladesh', 'Nepal', 'China', 'Bhutan', 'Mayanmar', 'Sri Lanka', 'Pakistan', 'Afganistan'];
 
