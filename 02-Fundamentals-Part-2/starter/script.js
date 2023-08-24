@@ -1,5 +1,15 @@
 'use strict';
 
+const sourav = {
+    firstName: 'Sourav',
+    lastName: 'Das',
+    age: 2037 - 1997,
+    job: 'Learner',
+    friends: ['Franklin', 'Michel', 'Trevor']
+};
+
+/*
+///////////////////////////////////////////////////////////////////////
 const friends = ['Franklin', 'Michel', 'Trevor'];
 
 // Add elements
@@ -31,7 +41,6 @@ if (friends.includes('Michel')) {
     console.log('You have a friend called Michel');
 }
 
-/*
 ///////////////////////////////////////////////////////////////////////
 const friend1 = 'Franklin';
 const friend2 = 'Michel';
