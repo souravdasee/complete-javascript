@@ -7,8 +7,43 @@ const sourav = {
     job: 'Learner',
     friends: ['Franklin', 'Michel', 'Trevor']
 };
+console.log(sourav);
+
+console.log(sourav.lastName);
+console.log(sourav['lastName']);
+
+const nameKey = 'Name';
+console.log(sourav['first' + nameKey]);
+console.log(sourav['last' + nameKey]);
+
+// console.log(jonas.'last' + nameKey);
+
+const interestedIn = prompt('What do you want to know about Sourav? Choose among firstName, lastName, age, job, and friends');
+
+if (sourav[interestedIn]) {
+    console.log(sourav[interestedIn]);
+} else {
+    console.log('Wrong request! Choose among firstName, lastName, age, job, and friends');
+}
+
+sourav.location = 'India';
+sourav['twitter'] = '@souravdasee';
+console.log(sourav);
+
+// Challenge
+// "Sourav has 3 friends, and his best friend is called Michel"
+console.log(`${sourav.firstName} has ${sourav.friends.length} friends, and his best friend is called ${sourav.friends[1]}`);
 
 /*
+///////////////////////////////////////////////////////////////////////
+const sourav = {
+    firstName: 'Sourav',
+    lastName: 'Das',
+    age: 2037 - 1997,
+    job: 'Learner',
+    friends: ['Franklin', 'Michel', 'Trevor']
+};
+
 ///////////////////////////////////////////////////////////////////////
 const friends = ['Franklin', 'Michel', 'Trevor'];
 
