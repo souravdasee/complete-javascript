@@ -1,18 +1,27 @@
 'use strict';
 
-const neighbours = ['Bangladesh', 'Nepal', 'China', 'Bhutan', 'Mayanmar', 'Sri Lanka', 'Pakistan', 'Afganistan'];
-
-neighbours.push('Utopia');
-neighbours.pop();
-
-console.log(neighbours);
-
-if (!neighbours.includes('Germany')) {
-    console.log('Probably not a central European country :D');
+const myCountry = {
+    country: 'India',
+    capital: 'New Delhi',
+    language: 'Hindi',
+    population: 1700,
+    neighbours: ['Bangladesh', 'Nepal', 'China', 'Bhutan', 'Mayanmar', 'Sri Lanka', 'Pakistan', 'Afganistan']
 }
 
-neighbours[neighbours.indexOf('China')] = 'U.C.'
-console.log(neighbours);
+
+// const neighbours = ['Bangladesh', 'Nepal', 'China', 'Bhutan', 'Mayanmar', 'Sri Lanka', 'Pakistan', 'Afganistan'];
+
+// neighbours.push('Utopia');
+// neighbours.pop();
+
+// console.log(neighbours);
+
+// if (!neighbours.includes('Germany')) {
+//     console.log('Probably not a central European country :D');
+// }
+
+// neighbours[neighbours.indexOf('China')] = 'U.C.'
+// console.log(neighbours);
 
 // const populations = [1441, 1700, 332, 60];
 
