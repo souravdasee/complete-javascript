@@ -5,18 +5,30 @@ const myCountry = {
     capital: 'New Delhi',
     language: 'Hindi',
     population: 1700,
-    neighbours: ['Bangladesh', 'Nepal', 'China', 'Bhutan', 'Mayanmar', 'Sri Lanka', 'Pakistan', 'Afganistan']
+    neighbours: ['Bangladesh', 'Nepal', 'China', 'Bhutan', 'Mayanmar', 'Sri Lanka', 'Pakistan', 'Afganistan'],
+    describe: function() {
+        return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+    },
+    checkIsland: function() {
+        return this.isIsland = this.neighbours.length === 0 ? true : false;
+        // this.isIsland = !Boolean(this.neighbours.length);
+    }
 }
 
-'Finland has 6 million finnish-speaking people, 3 neighbouring countriesand a capital called Helsinki.'
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland());
 
-console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countriesand a capital called ${myCountry.capital}.`);
 
-myCountry.population += 2;
-console.log(myCountry.population);
 
-myCountry['population'] -= 2;
-console.log(myCountry.population);
+// 'Finland has 6 million finnish-speaking people, 3 neighbouring countriesand a capital called Helsinki.'
+
+// console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countriesand a capital called ${myCountry.capital}.`);
+
+// myCountry.population += 2;
+// console.log(myCountry.population);
+
+// myCountry['population'] -= 2;
+// console.log(myCountry.population);
 
 
 // const neighbours = ['Bangladesh', 'Nepal', 'China', 'Bhutan', 'Mayanmar', 'Sri Lanka', 'Pakistan', 'Afganistan'];
