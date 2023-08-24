@@ -1,5 +1,38 @@
 'use strict';
 
+const friends = ['Franklin', 'Michel', 'Trevor'];
+
+// Add elements
+const newLength = friends.push('jay');
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John');
+console.log(friends);
+
+// Remove elements
+friends.pop(); // Last
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift(); // First
+console.log(friends);
+
+console.log(friends.indexOf('Michel'));
+console.log(friends.indexOf('Bob'));
+
+friends.push(23);
+console.log(friends.includes('Michel'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes(23));
+
+if (friends.includes('Michel')) {
+    console.log('You have a friend called Michel');
+}
+
+/*
+///////////////////////////////////////////////////////////////////////
 const friend1 = 'Franklin';
 const friend2 = 'Michel';
 const friend3 = 'Trevor';
@@ -38,7 +71,7 @@ console.log(age1, age2, age3);
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
 
-/*
+
 ////////////////////////////////////////////////////////////////////
 const calcAge = function (birthYear) {
     return 2037 - birthYear;
