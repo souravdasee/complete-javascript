@@ -3,6 +3,47 @@
 const sourav = {
     firstName: 'Sourav',
     lastName: 'Das',
+    birthYear: 1997,
+    job: 'learner',
+    friends: ['Franklin', 'Michel', 'Trevor'],
+    hasDriverLicense: false,
+
+    // calcAge: function(birthYear) {
+    //     return 2037 - this.birthYear;
+    // }
+
+    // calcAge: function() {
+    //     // console.log(this);
+    //     return 2037 - this.birthYear;
+    // }
+
+    calcAge: function() {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function() {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} driver's license`;
+    }
+};
+
+console.log(sourav.calcAge());
+
+console.log(sourav.age);
+console.log(sourav.age);
+console.log(sourav.age);
+
+// console.log(sourav['calcAge'](1997));
+
+// Challenge
+// "Sourav is a 40-year old learner, and he has a driver's license"
+console.log(sourav.getSummary());
+
+/*
+///////////////////////////////////////////////////////////////////////
+const sourav = {
+    firstName: 'Sourav',
+    lastName: 'Das',
     age: 2037 - 1997,
     job: 'Learner',
     friends: ['Franklin', 'Michel', 'Trevor']
@@ -34,7 +75,7 @@ console.log(sourav);
 // "Sourav has 3 friends, and his best friend is called Michel"
 console.log(`${sourav.firstName} has ${sourav.friends.length} friends, and his best friend is called ${sourav.friends[1]}`);
 
-/*
+
 ///////////////////////////////////////////////////////////////////////
 const sourav = {
     firstName: 'Sourav',
