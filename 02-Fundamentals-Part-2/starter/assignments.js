@@ -1,22 +1,26 @@
 'use strict';
 
-const myCountry = {
-    country: 'India',
-    capital: 'New Delhi',
-    language: 'Hindi',
-    population: 1700,
-    neighbours: ['Bangladesh', 'Nepal', 'China', 'Bhutan', 'Mayanmar', 'Sri Lanka', 'Pakistan', 'Afganistan'],
-    describe: function() {
-        return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
-    },
-    checkIsland: function() {
-        return this.isIsland = this.neighbours.length === 0 ? true : false;
-        // this.isIsland = !Boolean(this.neighbours.length);
-    }
+for (let voter = 1; voter <= 50; voter++) {
+    console.log(`Voter number ${voter} is currently voting`);
 }
 
-console.log(myCountry.describe());
-console.log(myCountry.checkIsland());
+// const myCountry = {
+//     country: 'India',
+//     capital: 'New Delhi',
+//     language: 'Hindi',
+//     population: 1700,
+//     neighbours: ['Bangladesh', 'Nepal', 'China', 'Bhutan', 'Mayanmar', 'Sri Lanka', 'Pakistan', 'Afganistan'],
+//     describe: function() {
+//         return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+//     },
+//     checkIsland: function() {
+//         return this.isIsland = this.neighbours.length === 0 ? true : false;
+//         // this.isIsland = !Boolean(this.neighbours.length);
+//     }
+// }
+
+// console.log(myCountry.describe());
+// console.log(myCountry.checkIsland());
 
 
 
