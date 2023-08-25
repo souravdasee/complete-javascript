@@ -1,5 +1,52 @@
 'use strict';
 
+const sourav = [
+    'Sourav',
+    'Das',
+    ['Franklin', 'Michel', 'Trevor'],
+    2037 - 1997,
+    'learner',
+    true
+];
+const types = [];
+
+for (let i = 0; i < sourav.length; i++) {
+    // Reading from array
+    console.log(sourav[i], typeof sourav[i]);
+
+    // Filling types array
+    // types[i] = typeof sourav[i];
+    types.push(typeof sourav[i]);
+}
+
+console.log(types);
+
+const years = [1997, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log('--- ONLY STRINGS ---');
+for (let i = 0; i < sourav.length; i++) {
+    if (typeof sourav[i] !== 'string') continue;
+
+    console.log(sourav[i], typeof sourav[i]);
+}
+
+console.log('--- BREAK WITH NUMBER ---');
+for (let i = 0; i < sourav.length; i++) {
+    if (typeof sourav[i] === 'number') break;
+
+    console.log(sourav[i], typeof sourav[i]);
+}
+
+
+/*
+///////////////////////////////////////////////////////////////////////
 // for loop keeps running while consdition is TRUE
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repetition ${rep} 🏋️`);
