@@ -1,8 +1,22 @@
 'use strict';
 
-for (let voter = 1; voter <= 50; voter++) {
-    console.log(`Voter number ${voter} is currently voting`);
+const populations = [1441, 1700, 332, 60];
+
+function percentageOfWorld1(population) {
+    return (population / 7900) * 100;
 }
+const percentages2 = [];
+
+for (let i = 0; i < populations.length; i++) {
+    percentages2[i] = percentageOfWorld1(populations[i]);
+}
+
+console.log(percentages2);
+
+
+// for (let voter = 1; voter <= 50; voter++) {
+//     console.log(`Voter number ${voter} is currently voting`);
+// }
 
 // const myCountry = {
 //     country: 'India',
