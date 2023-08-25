@@ -1,5 +1,12 @@
 'use strict';
 
+// for loop keeps running while consdition is TRUE
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep} 🏋️`);
+}
+
+/*
+///////////////////////////////////////////////////////////////////////
 const sourav = {
     firstName: 'Sourav',
     lastName: 'Das',
@@ -39,7 +46,7 @@ console.log(sourav.age);
 // "Sourav is a 40-year old learner, and he has a driver's license"
 console.log(sourav.getSummary());
 
-/*
+
 ///////////////////////////////////////////////////////////////////////
 const sourav = {
     firstName: 'Sourav',
