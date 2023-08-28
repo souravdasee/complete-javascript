@@ -1,6 +1,19 @@
 // Remember, we're gonna use strict mode in all scripts now!
 'use strict';
 
+const arr = [12, 5, -5, 0, 4];
+const printForecast = function (arr) {
+  let p = '';
+  for (let i = 1; i <= arr.length; i++) {
+    p += `... ${arr[i - 1]}°C in ${i} days `;
+  }
+  return p;
+};
+
+console.log(printForecast(arr));
+
+/*
+///////////////////////////////////////////////////////////////////
 // Debugging with the Console and Breakpoints
 const measureKelvin = function () {
     const measurement = {
