@@ -1,5 +1,40 @@
 'use strict';
 
+console.log(this);
+
+const calcAge = function (birthYear) {
+  console.log(2037 - birthYear);
+  console.log(this);
+};
+calcAge(1997);
+
+const calcAgeArrow = birthYear => {
+  console.log(2037 - birthYear);
+  console.log(this);
+};
+calcAgeArrow(1980);
+
+const sourav = {
+  year: 1997,
+  calcAge: function () {
+    console.log(this);
+    console.log(2037 - this.year);
+  },
+};
+sourav.calcAge();
+
+const bob = {
+  year: 2017,
+};
+
+bob.calcAge = sourav.calcAge;
+bob.calcAge();
+
+const f = sourav.calcAge;
+f();
+
+/*
+/////////////////////////////////////////////////////////////////////////
 // Variables
 console.log(me);
 // console.log(job);
