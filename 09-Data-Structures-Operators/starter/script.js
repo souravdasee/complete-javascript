@@ -54,6 +54,37 @@ const restaurant = {
   },
 };
 
+console.log('--- OR ---');
+// USe ANY data type, return ANY data type, short-curcuiting
+console.log(3 || 'Sourav');
+console.log('' || 'Sourav');
+console.log(true || 0);
+console.log(undefined || null);
+
+console.log(undefined || 0 || '' || 'Hello' || 18 || null);
+
+restaurant.numGuests = 19;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
+
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
+
+console.log('--- AND ---');
+console.log(0 && 'Sourav');
+console.log(7 && 'Sourav');
+
+console.log('Hello' && 23 && null && 'Sourav');
+
+// Practical example
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('mushrooms', 'spinach');
+}
+
+restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
+
+/*
+///////////////////////////////////////////////////////////////////////////////
 // 1) Destructuring
 // SPREAD, because on RIGHT side of =
 const arr = [1, 2, ...[3, 4]];
