@@ -60,6 +60,8 @@ const restaurant = {
   },
 };
 
+/*
+///////////////////////////////////////////////////////////////////////////////
 // Property NAMES
 const properties = Object.keys(openingHours);
 console.log(properties);
