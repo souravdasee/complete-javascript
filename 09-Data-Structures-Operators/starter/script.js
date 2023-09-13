@@ -60,6 +60,8 @@ const restaurant = {
   },
 };
 
+/*
+///////////////////////////////////////////////////////////////////////////////
 const question = new Map([
   ['question', 'What is the best programming language in the world?'],
   [1, 'C'],
