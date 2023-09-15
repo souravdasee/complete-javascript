@@ -60,6 +60,8 @@ const restaurant = {
   },
 };
 
+/*
+///////////////////////////////////////////////////////////////////////////////
 // Split and join
 console.log('a+very+nice+string'.split('+'));
 console.log('Sourav Das'.split(' '));
