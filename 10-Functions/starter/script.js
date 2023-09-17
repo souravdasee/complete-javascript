@@ -1,5 +1,23 @@
 'use strict';
 
+const greet = function (greeting) {
+  return function (name) {
+    console.log(`${greeting} ${name}`);
+  };
+};
+
+const greeterHey = greet('Hey');
+greeterHey('Sourav');
+greeterHey('Bob');
+
+greet('Hello')('Sourav');
+
+// Challenge
+const greet1 = greeting1 => name1 => console.log(`${greeting1} ${name1}`);
+greet1('Hi')('Alice');
+
+/*
+////////////////////////////////////////////////////////////////////////////////////
 const oneWord = function (str) {
   return str.replace(/ /g, '').toLowerCase();
 };
