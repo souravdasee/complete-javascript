@@ -135,6 +135,13 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
 
+const firstWithdrawal = movements.find(mov => mov < 0);
+console.log(movements);
+console.log(firstWithdrawal);
+
+const account = accounts.find(acc => acc.owner === 'Jessica Davis');
+console.log(account);
+
 // Coding Challenge #3 ------------------------------
 /*
 Rewrite the 'calcAverageHumanAge' function from Challenge #2, but this time
@@ -144,6 +151,9 @@ Test data:
 § Data 2: [16, 6, 10, 5, 6, 1, 4]
 GOOD LUCK 😀
 */
+
+/*
+/////////////////////////////////////////////////
 
 const calcAverageHumanAge = age =>
   age
