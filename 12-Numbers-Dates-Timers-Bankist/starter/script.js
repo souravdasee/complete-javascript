@@ -252,6 +252,43 @@ btnSort.addEventListener('click', function (e) {
 /////////////////////////////////////////////////
 // LECTURES
 
+//////////////////////007 Working with BigInt//////////////////////////
+
+console.log(2 ** 53 - 1); //->9007199254740991
+console.log(Number.MAX_SAFE_INTEGER); //->9007199254740991
+console.log(2 ** 53 + 1); //->9007199254740992
+console.log(2 ** 53 + 2); //->9007199254740994
+console.log(2 ** 53 + 3); //->9007199254740996
+console.log(2 ** 53 + 4); //->9007199254740996
+
+console.log(1283712937163781637816532853127836n); //->1283712937163781637816532853127836n
+console.log(BigInt(9384714723942374892374231)); //->9384714723942374569934848n
+
+// Operations
+console.log(1000n + 1000n); //->2000n
+console.log(
+  837128347234813413516735237489374892346723944234234512383743n +
+    8345724895712947192347238945729857340578340983450n
+); //->837128347243159138412448184681722131292453801574812853367193n
+// console.log(Math.sqrt(16n)); //->"Uncaught TypeError: Cannot convert a BigInt value to a number"
+
+const huge = 39058345734857348545834583453784n;
+const num = 23;
+console.log(huge * BigInt(num)); //->898341951901719016554195419437032n
+
+// Exceptions
+console.log(20n > 15); //->true
+console.log(20n === 20); //->false
+console.log(typeof 20n); //->"bigint"
+console.log(20n == '20'); //->true
+
+console.log(huge + ' is REALLY big!!!'); //->39058345734857348545834583453784 is REALLY big!!!
+
+// Divisions
+console.log(11n / 3n); //"Cuts the decimal parts"  ->3n
+console.log(10 / 3); //->3.3333333333333335
+
+/*
 //////////////////////006 Numeric Separators///////////////////////////
 // 287,460,000,000
 const diameter = 287_460_000_000;
