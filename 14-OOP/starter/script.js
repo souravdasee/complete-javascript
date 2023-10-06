@@ -31,3 +31,29 @@ Person.hey = function () {
   console.log(this);
 };
 Person.hey();
+
+///////////////////////////////////////
+// Prototypes
+console.log(Person.prototype);
+
+Person.prototype.calcAge = function () {
+  console.log(2037 - this.birthYear);
+};
+
+sourav.calcAge();
+matilda.calcAge();
+
+console.log(sourav.__proto__);
+console.log(sourav.__proto__ === Person.prototype);
+
+console.log(Person.prototype.isPrototypeOf(sourav));
+console.log(Person.prototype.isPrototypeOf(matilda));
+console.log(Person.prototype.isPrototypeOf(Person));
+
+// .prototyeOfLinkedObjects
+
+Person.prototype.species = 'Homo Sapiens';
+console.log(sourav.species, matilda.species);
+
+console.log(sourav.hasOwnProperty('firstName'));
+console.log(sourav.hasOwnProperty('species'));
