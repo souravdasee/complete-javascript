@@ -1,6 +1,5 @@
 'use strict';
 
-/*
 ///////////////////////////////////////
 // Constructor Functions and the new Operator
 
@@ -31,6 +30,13 @@ const jay = 'Jay';
 
 console.log(sourav instanceof Person);
 console.log(jay instanceof Person);
+
+Person.hey = function () {
+  console.log('Hey there 👋');
+  console.log(this);
+};
+Person.hey();
+// sourav.hey();
 
 ///////////////////////////////////////
 // Prototypes
@@ -83,7 +89,6 @@ console.log(arr.unique());
 
 const h1 = document.querySelector('h1');
 console.dir(x => x + 1);
-*/
 
 /*
 ///////////////////////////////////////
@@ -138,6 +143,7 @@ class PersonCl {
     this.birthYear = birthYear;
   }
 
+  // Instance method
   // Methods will be added to .prototype property
   calcAge() {
     console.log(2037 - this.birthYear);
@@ -160,6 +166,12 @@ class PersonCl {
   get fullName() {
     return this._fullName;
   }
+
+  // Static method
+  static hey() {
+    console.log('Hey there 👋');
+    console.log(this);
+  }
 }
 
 const jessica = new PersonCl('Jessica Davis', 1996);
@@ -180,6 +192,9 @@ jessica.greet();
 
 const walter = new PersonCl('Walter White', 1965);
 
+PersonCl.hey();
+
+/*
 ///////////////////////////////////////
 // Setters and Getters
 
@@ -200,3 +215,4 @@ console.log(account.latest);
 
 account.latest = 50;
 console.log(account.movements);
+*/
