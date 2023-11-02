@@ -3,8 +3,6 @@
 const btn = document.querySelector('.btn-country');
 const countriesContainer = document.querySelector('.countries');
 
-///////////////////////////////////////
-
 const renderCountry = function (data, className = '') {
   const html = `
   <article class="country ${className}">
@@ -25,20 +23,16 @@ const renderCountry = function (data, className = '') {
   </article>
   `;
   countriesContainer.insertAdjacentHTML('beforeend', html);
-  countriesContainer.style.opacity = 1;
+  // countriesContainer.style.opacity = 1;
 };
 
-// const getCountryData = function (country) {
-//   fetch(`https://restcountries.com/v3.1/name/${country}`)
-//     .then(function (response) {
-//       console.log(response);
-//       return response.json();
-//     })
-//     .then(function (data) {
-//       console.log(data);
-//       renderCountry(data[0]);
-//     });
-// };
+const renderError = function (msg) {
+  countriesContainer.insertAdjacentText('beforeend', msg);
+  // countriesContainer.style.opacity = 1;
+};
+
+///////////////////////////////////////
+
 const getCountryData = function (country) {
   // Country 1
   fetch(`https://restcountries.com/v3.1/name/${country}`)
@@ -53,10 +47,35 @@ const getCountryData = function (country) {
       return fetch(`https://restcountries.com/v3.1/alpha/${neighbour}`);
     })
     .then(response => response.json())
-    .then(data => renderCountry(data[0], 'neighbour'));
+    .then(data => renderCountry(data[0], 'neighbour'))
+    .catch(err => {
+      console.error(`${err} 💥💥💥`);
+      renderError(`Something went wrong 💥💥💥 ${err.message}. Try again!`);
+    })
+    .finally(() => {
+      countriesContainer.style.opacity = 1;
+    });
 };
-// getCountryData('canada');
-getCountryData('germany');
+
+btn.addEventListener('click', function () {
+  getCountryData('germany');
+});
+
+// getCountryData('dsdsdsdsdsd');
+
+/*
+// const getCountryData = function (country) {
+//   fetch(`https://restcountries.com/v3.1/name/${country}`)
+//     .then(function (response) {
+//       console.log(response);
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       console.log(data);
+//       renderCountry(data[0]);
+//     });
+// };
+*/
 
 /*
 const getCountryAndNeighbour = function (country) {
